@@ -1,0 +1,75 @@
+{
+    "name": "ui",
+    "version": "1.0.0",
+    "private": true,
+    "engines": {
+        "node": "16.x"
+    },
+    "scripts": {
+        "dev": "env-cmd -f ./env/.env.development next dev -p 4200",
+        "debug": "env-cmd -f ./env/.env.development NODE_OPTIONS='--inspect' next dev -p 4200",
+        "build": "next build",
+        "start": "next start -p 5000",
+        "build:qa": "env-cmd -f ./env/.env.qa next build",
+        "build:staging": "env-cmd -f ./env/.env.staging next build",
+        "build:production": "env-cmd -f ./env/.env.production next build",
+        "test:watch": "env-cmd -f ./env/.env.test-mode jest --watch --config ./config/jest.config.js",
+        "test": "env-cmd -f ./env/.env.test-mode jest --config ./config/jest.config.js"
+    },
+    "author": "Yashjeet Luthra <yash@napses.com>, Priyansh Jain <priyansh.jain@napses.com>",
+    "license": "Napses",
+    "dependencies": {
+        "@babel/plugin-transform-runtime": "^7.19.6",
+        "@babel/preset-env": "^7.20.2",
+        "@babel/preset-react": "^7.18.6",
+        "axios": "^0.27.2",
+        "env-cmd": "^10.1.0",
+        "flagsmith": "^3.3.2",
+        "icomoon-react": "^3.0.0",
+        "next": "^12.2.2",
+        "prop-types": "^15.8.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "sinon": "^14.0.0",
+        "tailwindcss-rtl": "^0.9.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.18.6",
+        "@babel/eslint-parser": "^7.18.2",
+        "@babel/plugin-syntax-jsx": "^7.16.7",
+        "@babel/plugin-transform-runtime": "^7.16.8",
+        "@babel/preset-react": "^7.16.7",
+        "@testing-library/dom": "^9.0.0",
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/react": "^14.0.0",
+        "@testing-library/user-event": "^14.4.3",
+        "autoprefixer": "^10.4.7",
+        "babel-jest": "^28.1.2",
+        "eslint": "^8.19.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-mocha": "^10.0.5",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "jest": "^28.1.2",
+        "jest-environment-jsdom": "^29.4.3",
+        "jest-fetch-mock": "^3.0.3",
+        "postcss": "^8.4.14",
+        "tailwindcss": "^3.1.6"
+    },
+    "jest": {
+        "testPathIgnorePatterns": [
+            "<rootDir>/.next/",
+            "<rootDir>/node_modules/"
+        ],
+        "setupFilesAfterEnv": [
+            "<rootDir>/setupTests.js"
+        ],
+        "transform": {
+            "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest"
+        },
+        "moduleNameMapper": {
+            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+            "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+        }
+    }
+}

@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "776544280132",
+    "project_id": "xpert-home-app",
+    "storage_bucket": "xpert-home-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776544280132:android:e978f4c63760210382a611",
+        "android_client_info": {
+          "package_name": "com.livspace.uatxpert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776544280132-8de78hj5ivhh4rlso4kom5kc864gfqb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLrh12_0y9TrYriDWWjpI2u46uW1EwOok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776544280132-8de78hj5ivhh4rlso4kom5kc864gfqb3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "776544280132-fmd6ltprap0qpp36moo627vv8963fjkh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.livspace.xpertDev"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776544280132:android:12d7719a9f54155182a611",
+        "android_client_info": {
+          "package_name": "com.livspace.xperthome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776544280132-8de78hj5ivhh4rlso4kom5kc864gfqb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLrh12_0y9TrYriDWWjpI2u46uW1EwOok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776544280132-8de78hj5ivhh4rlso4kom5kc864gfqb3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "776544280132-fmd6ltprap0qpp36moo627vv8963fjkh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.livspace.xpertDev"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
